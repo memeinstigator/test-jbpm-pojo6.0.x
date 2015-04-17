@@ -6,13 +6,6 @@
   <artifactId>project1</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <dependencies>
-    <dependency>
-      <groupId>test</groupId>
-      <artifactId>MyWorkingModelXJC</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
