@@ -6,6 +6,13 @@
   <artifactId>project1</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>com.redhat.demo.example.domain</groupId>
+      <artifactId>MyTestDomain</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
