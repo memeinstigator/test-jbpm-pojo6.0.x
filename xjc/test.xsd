@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.jboss.org/jbossas/quickstarts/wshelloworld/HelloWorld" elementFormDefault="unqualified" targetNamespace="http://www.jboss.org/jbossas/quickstarts/wshelloworld/HelloWorld" version="1.0">
+
+  <xs:element name="MyDummyPOJO" type="tns:myDummyPOJO"/>
+
+  <xs:element name="testObject" type="tns:testObject"/>
+
+  <xs:element name="testObjectResponse" type="tns:testObjectResponse"/>
+
+  <xs:element name="testObjectReturn" type="tns:testObjectReturn"/>
+
+  <xs:element name="testObjectReturnResponse" type="tns:testObjectReturnResponse"/>
+
+  <xs:complexType name="testObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:myDummyPOJO"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="myDummyPOJO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:string"/>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="testObjectResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="testObjectReturn">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:myDummyPOJO"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="testObjectReturnResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:myDummyPOJO"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
